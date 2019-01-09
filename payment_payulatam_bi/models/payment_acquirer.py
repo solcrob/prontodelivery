@@ -2,8 +2,6 @@
 # Part of BrowseInfo. See LICENSE file for full copyright and licensing details.
 ##############################################################################
 from werkzeug import urls
-# import md5
-# from hashlib import md5
 import hashlib
 
 from odoo.addons.payment_payulatam_bi.controllers.main import PayuLatamController
@@ -42,7 +40,7 @@ class PaymentAcquirerPayulatam(models.Model):
             values['amount'],
             values['currency']])
         m = hashlib.md5()
-        m.update(data.encode("utf8"))
+        m.update(data.encode("utf-8"))
         return m.hexdigest()
 
     @api.multi
@@ -69,7 +67,6 @@ class PaymentAcquirerPayulatam(models.Model):
             test=test,
             responseUrl='%s' % urls.url_join(
                 base_url, PayuLatamController._return_url),
-            # confirmationUrl='%s' % urlparse.urljoin(base_url, PayuLatamController._confirm_url),
         )
         temp_paylatam_tx_values['signature'] = self._payulatam_generate_hashing(temp_paylatam_tx_values)
         payulatam_tx_values.update(temp_paylatam_tx_values)

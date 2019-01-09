@@ -7,7 +7,7 @@
     'category': 'eCommerce',
     'website' : "http://www.browseinfo.in",
     'summary': 'PayuLatam Payment Acquirer integration with Odoo shop',
-    'version': '12.0.0.0',
+    'version': '12.0.0.1',
     'description': """PayuLatam Payment Acquirer
 		Website PayuLatam Payment Acquirer integration with Odoo shop
 		Website Payment Acquirer PayuLatam
@@ -33,8 +33,6 @@
     "price": 49,
     "currency": 'EUR',
     'data': [
-#         'views/res_config_view.xml',
-        # 'views/payulatam.xml',
         'views/payment_acquirer.xml',
         'views/payment_payulatam_template.xml',
         'data/payu.xml',

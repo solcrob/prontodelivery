@@ -93,17 +93,6 @@ class PaymentTransactionPayuLatam(models.Model):
                     'state_message': state_message
                 })
                 tx = pay_acq_rec
-            #verify shasign
-          # data.update({'ApiKey': pay_acq_rec.acquirer_id.payulatam_apiKey,
-          #              'amount': data.get('TX_VALUE')
-          #             })
-          # shasign_check = pay_acq_rec.acquirer_id._payulatam_generate_hashing(data)
-          # print "__________", shasign_check
-
-          # if shasign_check.upper() != shasign.upper():
-          #     error_msg = _('PayuLatam: invalid shasign, received %s, computed %s, for data %s') % (
-          #         shasign, shasign_check, data)
-          #     raise ValidationError(error_msg)
         return tx
 
     @api.model
