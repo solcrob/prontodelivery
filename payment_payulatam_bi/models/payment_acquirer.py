@@ -17,9 +17,9 @@ class PaymentAcquirerPayulatam(models.Model):
         """ PayuLatam URLs
         """
         if environment == 'prod':
-            return {'payu_form_url': 'https://checkout.payulatam.com/ppp-web-gateway-payu'}
+            return {'payu_form_url': 'https://secure.payu.com/'}
         else:
-            return {'payu_form_url': 'https://sandbox.checkout.payulatam.com/ppp-web-gateway-payu'}
+            return {'payu_form_url': 'https://secure.snd.payu.com/'}
 
     @api.model
     def _get_providers(self):
