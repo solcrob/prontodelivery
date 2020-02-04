@@ -17,9 +17,9 @@ class PaymentAcquirerPayulatam(models.Model):
         """ PayuLatam URLs
         """
         if environment == 'prod':
-            return {'payu_form_url': 'https://secure.payu.com/'}
+            return {'payu_form_url': 'https://secure.payu.com/api/v2_1/orders'}
         else:
-            return {'payu_form_url': 'https://secure.snd.payu.com/'}
+            return {'payu_form_url': 'https://secure.snd.payu.com/api/v2_1/orders'}
 
     @api.model
     def _get_providers(self):
