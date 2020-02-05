@@ -1,4 +1,4 @@
-# payment_payulatam
+# payment_payu
 Payment Integration with payulatam
 
 merchantId: 508029
