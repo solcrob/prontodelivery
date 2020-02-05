@@ -9,17 +9,11 @@ description: Test PAYU
 amount: 3
 tax: 0
 taxReturnBase: 0
-currency: USD
+currency: 
 signature: ba9ffa71559580175585e45ce70b6c37
 test: 1
 buyerEmail: test@test.com
 
-production url:==> https://gateway.payulatam.com/ppp-web-gateway
-
-test url ==> https://sandbox.checkout.payulatam.com/ppp-web-gateway-payu/
-
-
-http://developers.payulatam.com/en/web_checkout/sandbox.html
 
 
 
