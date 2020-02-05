@@ -1,18 +1,18 @@
 # -*- coding: utf-8 -*-
-# Part of BrowseInfo. See LICENSE file for full copyright and licensing details.
+# Part of  See LICENSE file for full copyright and licensing details.
 ##############################################################################
 {
-    'name': 'Website PayuLatam Payment Acquire',
-    'author':'BrowseInfo',
+    'name': 'Website Payu Payment Acquire',
+    'author':'',
     'category': 'eCommerce',
-    'website' : "http://www.browseinfo.in",
-    'summary': 'PayuLatam Payment Acquirer integration with Odoo shop',
+    'website' : "",
+    'summary': '',
     'version': '12.0.0.1',
-    'description': """PayuLatam Payment Acquirer
+    'description': """Payu Payment Acquirer
 		Website PayuLatam Payment Acquirer integration with Odoo shop
 		Website Payment Acquirer PayuLatam
-		Website Latin america payment gateway with odoo
-		Website Latin america payment Acquirer
+		Website Latin Europe payment gateway with odoo
+		Website Latin Europe payment Acquirer
 		Website Payu Payment Acquirer
 		Website payment payu Acquirer
 
@@ -22,8 +22,8 @@
 		Website Pay u Payment Acquirer
 		Website payment pay u Acquirer
 
-		Website Payu-Latam Payment Acquirer integration with Odoo shop
-		Website Payment Acquirer Payu-Latam
+		Website Payu Payment Acquirer integration with Odoo shop
+		Website Payment Acquirer Payu
 		Website Pay-u Payment Acquirer
 		Website payment pay-u Acquirer
 
@@ -34,7 +34,7 @@
     "currency": 'EUR',
     'data': [
         'views/payment_acquirer.xml',
-        'views/payment_payulatam_template.xml',
+        'views/payment_payu_template.xml',
         'data/payu.xml',
     ],
     'installable': True,
