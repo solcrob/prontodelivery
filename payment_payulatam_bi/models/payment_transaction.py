@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Part of BrowseInfo. See LICENSE file for full copyright and licensing details.
+# Part of . See LICENSE file for full copyright and licensing details.
 ##############################################################################
 import logging
 
@@ -12,11 +12,11 @@ from odoo import api, fields, models
 _logger = logging.getLogger(__name__)
 
 
-class PaymentTransactionPayuLatam(models.Model):
+class PaymentTransactionPayu(models.Model):
     _inherit = 'payment.transaction'
 
-    payulatam_txnid = fields.Char(string='Transaction ID')
-    payulatam_id = fields.Char(string="Reference Pol ID")
+    payu_txnid = fields.Char(string='Transaction ID')
+    payu_id = fields.Char(string="Reference Pol ID")
     psebank = fields.Char(string="PSEBank")
     cus = fields.Char(string="Cus")
 
